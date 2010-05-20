@@ -5,7 +5,9 @@ This web framework is based on Simon Willison's [djangode](http://github.com/sim
 
 *Apps* contain a set of (regex) *URL patterns* that map HTTP requests to handler methods, called *views*. URL patterns and views are stored in separate files, which are imported when the app is executed. Apps can be organised into a set of modules, each with their own URL and view definitions. You can build quite complex apps by hooking a module's URL patterns one of the parent module's URL patterns (in the same way that django does).
 
-Examples will be stored in the apps directory, and will give you a starting point for building your applications. To run the examples you must have [node.js](http://github.com/ry/node) installed. Navigate to the example directory in your terminal of choice, and run:
+Djangode currently implements a javascript conversion of the django template system, which has been modified slightly to work with more recent versions of node.js. The template system can be hooked into your views to provide a simpler way to render your content.
+
+Examples are be stored in the apps directory, and will give you a starting point for building your applications. To run the examples you must have [node.js](http://github.com/ry/node) installed. Navigate to the example directory in your terminal of choice, and run:
 
     node app.js
 
@@ -35,7 +37,7 @@ App Structure
 In Development...
 -----------------
 
-Djangode currently implements a javascript conversion of the django template system, which will (soon) be hooked into the views, once the code has been updated to work with the latest node.js codebase. After that, the project will incorporate one of the more popular node.js data modelling libraries.
+jimi is currently considering various node.js data modelling libraries, so please forward any suggestions to [colin.j.gourlay@gmail.com](mailto:colin.j.gourlay@gmail.com).
 
 Thanks
 ------
