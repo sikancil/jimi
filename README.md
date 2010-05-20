@@ -29,10 +29,16 @@ App Structure
      |   |- urls.js
      |   |- views.js
      |
-     |- <module_directory>
+     |- templates
          |
-         |- urls.js
-         |- views.js
+         |- <base_template>.html
+         |
+         |- <module_directory>
+             |
+             |- <template>.html
+             |- <template>.html
+
+Templates don't have to be laid out this way, but the templating example uses this layout. Also, this structure doesn't show static content. This would be placed in a sub folder of the app directory. Look at either of the examples to see how they fit in.
 
 In Development...
 -----------------
