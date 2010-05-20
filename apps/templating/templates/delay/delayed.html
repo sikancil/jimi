@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block "title" %}{{ block.super }} | Delayed Response Module{% endblock %}
+
+{% block "content" %}
+<h1>Delayed Response Module</h1>
+<p>I was delayed by {{ how_long }} milliseconds.</p>
+{% endblock %}

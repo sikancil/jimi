@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block "title" %}{{ block.super }} | About{% endblock %}
+
+{% block "content" %}
+<h1>About</h1>
+<p>This app contains one example module: the delayed response module from the <strong>basic</strong> example app. All of the HTML you see in these pages is rendered using the <strong>djangode</strong> templating system.</p>
+<h2>Delayed Response Module</h2>
+<ul>
+    <li><a href="/delay/1000">1 second delay</a></li>
+    <li><a href="/delay/3000">3 second delay</a></li>
+    <li><a href="/delay/5000">5 second delay</a></li>
+</ul>
+{% endblock %}

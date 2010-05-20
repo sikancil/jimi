@@ -1,7 +1,8 @@
 var sys = require('sys');
+var object = require('.object');
 
-process.mixin(GLOBAL, require('./test').dsl);
-process.mixin(GLOBAL, require('./string'));
+object.mixin(GLOBAL, require('./test').dsl);
+object.mixin(GLOBAL, require('./string'));
 
 testcase('string utility functions');
     test('smart_split should split correctly', function () {
