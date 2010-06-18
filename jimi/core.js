@@ -81,7 +81,7 @@ exports.extractPost = function(req, callback) {
     });
 }
 
-var debuginfo = {}
+debuginfo = {}
 exports.debuginfo = debuginfo;
 
 function build_url_mappings(url_mappings, partial_pattern) {
