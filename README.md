@@ -67,4 +67,4 @@ In Development...
 Thanks
 ------
 
-This project wouldn't be possible without Simon Willison, who's enthusiasm for bleeding edge web technology regularly spawns cool projects such as *djangode*. The source code for *jimi* is heavily based on djangode, and will hopefully evolve along the lines that Simon intended it to. The *django* project also deserves heaps of credit. Jimi is an exploration of django's concepts in the world of server-side JavaScript, so thanks to the django community for doing the real heavy lifting.
+This project wouldn't be possible without Simon Willison, who's enthusiasm for bleeding edge web technology regularly spawns cool projects such as *djangode*. The source code for *jimi* is heavily based on djangode, and will hopefully evolve along the lines that Simon intended it to. The *django* project also deserves heaps of credit. jimi is an exploration of django's concepts in the world of server-side JavaScript, so thanks to the django community for doing the real heavy lifting.
