@@ -1,4 +1,4 @@
-var jimi = require('../../jimi/core');
+var jimi = require('jimi');
 var views = require('./views');
 
 var url_mappings = exports.mappings = [

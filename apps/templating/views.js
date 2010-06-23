@@ -1,6 +1,6 @@
-var jimi = require('../../jimi/core');
-var template_system = require('../../jimi/template/template');
-var template_loader = require('../../jimi/template/loader');
+var jimi = require('jimi');
+var template_system = require('jimi/template/template');
+var template_loader = require('jimi/template/loader');
 
 exports.root = function(req, res) {
     template_loader.set_path('templates');

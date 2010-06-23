@@ -1,4 +1,4 @@
-var jimi = require('../../../jimi/core');
+var jimi = require('jimi');
 
 exports.delayed = function(req, res, how_long) {
     setTimeout(function() {

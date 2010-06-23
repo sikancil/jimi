@@ -1,0 +1,36 @@
+{
+    "name" : "jimi",
+    "version" : "0.0.1",
+    "description" : "javascript web framework",
+    "maintainers": [
+        {
+            "name": "Colin Gourlay",
+            "email": "colin.j.gourlay@gmail.com",
+            "web": "http://colin-gourlay.com" 
+        } 
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "http://github.com/colingourlay/jimi.git" 
+        } 
+    ],
+    "directories" : { "lib" : "./lib" },
+    "main" : "./lib/jimi",
+    "overlay" : {
+        "node" : {
+            "name" : "jimi",
+            "description" : "javascript web framework"
+        },
+        "npm" : {
+            "version" : "0.0.1",
+            "description" : "javascript web framework",
+            "engines" : [
+                "node >=0.1.95"
+            ]
+        },
+        "narwhal" : {
+            "description" : "javascript web framework"
+        }
+    }
+}

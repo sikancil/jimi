@@ -1,4 +1,4 @@
-var jimi = require('../../jimi/core');
+var jimi = require('jimi');
 
 exports.root = function(req, res) {
     jimi.respond(res, '<h1>jimi</h1> \

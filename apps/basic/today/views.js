@@ -1,4 +1,4 @@
-var jimi = require('../../../jimi/core');
+var jimi = require('jimi');
 
 var now = new Date();
 var month_names = new Array("January", "February", "March", "April", "May",

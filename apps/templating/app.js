@@ -1,4 +1,4 @@
-var jimi = require('../../jimi/core');
+var jimi = require('jimi');
 
 url_mappings = require('./urls').mappings;
 
