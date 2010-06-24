@@ -1,7 +1,7 @@
 {
     "name" : "jimi",
-    "version" : "0.0.1",
-    "description" : "javascript web framework",
+    "version" : "0.0.2",
+    "description" : "Web development framework for node.js",
     "maintainers": [
         {
             "name": "Colin Gourlay",
@@ -18,19 +18,12 @@
     "directories" : { "lib" : "./lib" },
     "main" : "./lib/jimi",
     "overlay" : {
-        "node" : {
-            "name" : "jimi",
-            "description" : "javascript web framework"
-        },
         "npm" : {
-            "version" : "0.0.1",
-            "description" : "javascript web framework",
+            "version" : "0.0.2",
+            "description" : "Web development framework for node.js",
             "engines" : [
                 "node >=0.1.95"
             ]
-        },
-        "narwhal" : {
-            "description" : "javascript web framework"
         }
     }
 }
