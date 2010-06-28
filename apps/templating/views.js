@@ -5,10 +5,12 @@ var template_loader = require('jimi/template/loader');
 exports.root = function(req, res) {
     template_loader.set_path('templates');
     template_loader.load_and_render('root.html', {}, function (error, result) {
-        if (error) {
-            jimi.default_show_500(req, res, error);
-        } else {
+        if (!error) {
             jimi.respond(res, result, 'text/html');
         }
     });
+}
+
+exports.favicon = function(req, res) {
+    jimi.respond(res, 'Not here!');
 }

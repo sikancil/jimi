@@ -1,7 +1,7 @@
 {
     "name" : "jimi",
-    "version" : "0.0.2",
-    "description" : "Web development framework for node.js",
+    "version" : "0.0.3",
+    "description" : "A framework for writing modular web applications in node.js",
     "maintainers": [
         {
             "name": "Colin Gourlay",
@@ -19,10 +19,11 @@
     "main" : "./lib/jimi",
     "overlay" : {
         "npm" : {
-            "version" : "0.0.2",
-            "description" : "Web development framework for node.js",
+            "version" : "0.0.3",
+            "description" : "A framework for writing modular web applications in node.js",
             "engines" : [
-                "node >=0.1.95"
+                "node >=0.1.99",
+                "connect >=0.1.0"
             ]
         }
     }

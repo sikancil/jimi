@@ -9,10 +9,8 @@ exports.delayed = function(req, res, how_long) {
         }
         template_loader.set_path('templates');
         template_loader.load_and_render('delay/delayed.html', context, function (error, result) {
-            if (error) {
-                jimi.default_show_500(req, res, error);
-            } else {
-                jimi.respond(res, result, 'text/html');
+            if (!error) {
+                jimi.respond(res, result);
             }
         });
     }, parseInt(how_long, 10));

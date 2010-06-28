@@ -24,12 +24,8 @@ exports.root = function(req, res) {
     ');
 }
 
-exports.error = function(req, res) {
-    "simon"("not a function");
-}
-
 exports.redirect = function(req, res) {
-    jimi.redirect(res, '/');
+    res.redirect('/');
 }
 
 exports.favicon = function(req, res) {

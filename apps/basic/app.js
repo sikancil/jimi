@@ -1,7 +1,9 @@
 var jimi = require('jimi');
 
-url_mappings = require('./urls').mappings;
+options = {
+    url_conf: require('./urls'),
+    public_path: __dirname + '/public',
+    debug: true
+}
 
-app = jimi.make_app(url_mappings);
-
-jimi.run(app, 8009);
+jimi.run(options);
