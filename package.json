@@ -1,6 +1,6 @@
 {
     "name" : "jimi",
-    "version" : "0.0.3",
+    "version" : "0.0.4",
     "description" : "A framework for writing modular web applications in node.js",
     "maintainers": [
         {
@@ -19,7 +19,7 @@
     "main" : "./lib/jimi",
     "overlay" : {
         "npm" : {
-            "version" : "0.0.3",
+            "version" : "0.0.4",
             "description" : "A framework for writing modular web applications in node.js",
             "engines" : [
                 "node >=0.1.99",
