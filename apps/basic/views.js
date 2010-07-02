@@ -1,6 +1,6 @@
 var jimi = require('jimi');
 
-exports.root = function(req, res) {
+exports.root = function (req, res) {
     jimi.respond(res, '<h1>jimi</h1> \
         <ul> \
             <li><a href="/redirect">Redirect back to /</a></li> \
@@ -24,10 +24,10 @@ exports.root = function(req, res) {
     ');
 }
 
-exports.redirect = function(req, res) {
+exports.redirect = function (req, res) {
     res.redirect('/');
 }
 
-exports.favicon = function(req, res) {
+exports.favicon = function (req, res) {
     jimi.respond(res, 'Not here!');
 }

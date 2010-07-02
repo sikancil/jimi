@@ -1,10 +1,7 @@
-var jimi = require('jimi');
-var views = require('./views');
+var views = require('./views')
 
-var url_mappings = exports.mappings = [
+exports.mappings = [
     ['^$', views.root],
-    ['^delay/', require('./delay/urls').mappings]
+    ['^delay/', require('./delay/urls').mappings],
+    ['^favicon\.ico$', views.favicon]
 ];
-
-// favicon
-url_mappings.push(['^favicon\.ico$', views.favicon]);

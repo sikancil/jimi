@@ -1,7 +1,6 @@
-var jimi = require('jimi');
 var views = require('./views');
 
-var url_mappings = exports.mappings = [
+var mappings = exports.mappings = [
     ['^$', views.root],
     ['^redirect/$', views.redirect],
     ['^error/$', views.error],
@@ -9,5 +8,4 @@ var url_mappings = exports.mappings = [
     ['^today/', require('./today/urls').mappings]
 ];
 
-// favicon
-url_mappings.push(['^favicon\.ico$', views.favicon]);
+mappings.push(['^favicon\.ico$', views.favicon]);
