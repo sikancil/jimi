@@ -1,0 +1,1 @@
+require('jimi').run({url_conf:{mappings:[['',function(i,o){require('jimi').respond(o,':-)');}]]}});
