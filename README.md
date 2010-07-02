@@ -3,10 +3,10 @@ jimi
 
 A framework for writing modular web applications in node.js
 
-About jimi
-----------
+About
+-----
 
-*Apps* contain a set of (regex) *URL patterns* that map HTTP requests to handler methods, called *views*. URL patterns and views are stored in separate files, which are imported when the app is executed. Apps can be organised into a set of modules, each with their own URL and view definitions. You can build quite complex apps by hooking a module's URL patterns one of the parent module's URL patterns.
+*Apps* contain a set of (regex) *URL mappings* that map HTTP requests to handler methods, called *views*. URL mappings and views can be stored in separate files, which are imported when the app is executed. Apps can be organised into a set of modules, each with their own URL and view definitions. You can build quite complex apps by hooking a module's URL patterns one of the parent module's URL patterns.
 
 jimi currently uses a javascript conversion of the django template system (written by Simon Willison), which has been modified slightly to work with more recent versions of node.js. The template system can be hooked into your views to provide a simpler way to render your content.
 
@@ -22,7 +22,7 @@ To install through *npm*, run the following command in your terminal of choice:
 Example Apps
 ------------
 
-Examples are be stored in the apps directory, and will give you a starting point for building your applications. Navigate to the example directory and run:
+Examples are be stored in the apps directory, and will give you a starting point for building your applications. Navigate to an example app directory and run:
 
     node app.js
 
