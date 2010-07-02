@@ -1,9 +1,4 @@
-var jimi = require('jimi');
-
-options = {
+require('jimi').run({
     url_conf: require('./urls'),
-    public_path: __dirname + '/public',
     debug: true
-}
-
-jimi.run(options);
+});
