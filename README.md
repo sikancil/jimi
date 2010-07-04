@@ -19,6 +19,11 @@ To install through *npm*, run the following command in your terminal of choice:
 
     npm install jimi
 
+Get Started
+-----------
+
+Have a run through the [Tutorial](http://wiki.github.com/colingourlay/jimi/tutorial-hello-world) to get a flavour of how jimi works. It'll take you 5 minutes to get your first site up and running. If it takes more than 5, I'll give you your money back.
+
 Example Apps
 ------------
 
