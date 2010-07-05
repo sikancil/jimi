@@ -1,11 +1,11 @@
-var views = require('./views');
+var agents = require('./agents');
 
 var mappings = exports.mappings = [
-    ['^$', views.root],
-    ['^redirect/$', views.redirect],
-    ['^error/$', views.error],
+    ['^$', agents.root],
+    ['^redirect/$', agents.redirect],
+    ['^error/$', agents.error],
     ['^delay/', require('./delay/urls').mappings],
     ['^today/', require('./today/urls').mappings]
 ];
 
-mappings.push(['^favicon\.ico$', views.favicon]);
+mappings.push(['^favicon\.ico$', agents.favicon]);

@@ -1,5 +1,5 @@
-var views = require('./views');
+var agents = require('./agents');
 
 exports.mappings = [
-    ['^$', views.hello_world]
+    ['^$', agents.hello_world]
 ];

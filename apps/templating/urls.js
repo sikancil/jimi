@@ -1,7 +1,7 @@
-var views = require('./views')
+var agents = require('./agents');
 
 exports.mappings = [
-    ['^$', views.root],
+    ['^$', agents.root],
     ['^delay/', require('./delay/urls').mappings],
-    ['^favicon\.ico$', views.favicon]
+    ['^favicon\.ico$', agents.favicon]
 ];

@@ -6,9 +6,9 @@ A framework for writing modular web applications in node.js
 About
 -----
 
-*Apps* contain a set of (regex) *URL mappings* that map HTTP requests to handler methods, called *views*. URL mappings and views can be stored in separate files, which are imported when the app is executed. Apps can be organised into a set of modules, each with their own URL and view definitions. You can build quite complex apps by hooking a module's URL mappings into one of another module's URL mappings.
+*Apps* contain a set of (regex) *URL mappings* that map HTTP requests to handler methods, called *agents*. URL mappings and agents can be stored in separate files, which are imported when the app is executed. Apps can be organised into a set of modules, each with their own URL and agent definitions. You can build quite complex apps by hooking a module's URL mappings into one of another module's URL mappings.
 
-jimi currently uses a javascript conversion of the django template system (written by Simon Willison), which has been modified slightly to work with more recent versions of node.js. The template system can be hooked into your views to provide a simpler way to render your content.
+jimi currently uses a javascript conversion of the django template system (written by Simon Willison), which has been modified slightly to work with more recent versions of node.js. The template system can be hooked into your agents to provide a simpler way to render your content.
 
 To use jimi & run the example apps you must have [node.js](http://github.com/ry/node), [npm](http://github.com/isaacs/npm) and [Connect](http://github.com/extjs/Connect) installed.
 
@@ -39,19 +39,19 @@ Example App Structure
     <app_directory>
      |
      |- app.js
+     |- agents.js
      |- urls.js
-     |- views.js
      |
      |- <module_directory>
      |   |
+     |   |- agents.js
      |   |- urls.js
-     |   |- views.js
      |
      |- <public_directory>
      |   |
      |   |- <public_file>.css
      |
-     |- templates
+     |- <templates_directory>
          |
          |- <base_template>.html
          |
@@ -60,7 +60,7 @@ Example App Structure
              |- <template>.html
              |- <template>.html
 
-Templates don't have to be laid out this way, but the templating example uses this layout. Public content such as static files should be placed in a folder inside your app directory. Look at either of the examples to see how they fit in.
+Templates don't have to be laid out this way, but the templating example uses this layout. Public content such as static files should also be placed in a folder inside your app directory. Look at some of the examples to see how they fit in.
 
 In Development...
 -----------------

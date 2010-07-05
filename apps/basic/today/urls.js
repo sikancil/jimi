@@ -1,8 +1,8 @@
-var views = require('./views');
+var agents = require('./agents');
 
 exports.mappings = [
-    ['^$', views.today],
-    ['^day/$', views.day],
-    ['^month/$', views.month],
-    ['^year/$', views.year]
+    ['^$', agents.today],
+    ['^day/$', agents.day],
+    ['^month/$', agents.month],
+    ['^year/$', agents.year]
 ];
