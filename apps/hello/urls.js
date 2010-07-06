@@ -1,5 +1,5 @@
-var agents = require('./agents');
+var handlers = require('./handlers');
 
 exports.mappings = [
-    ['^$', agents.hello_world]
+    ['^$', handlers.hello_world]
 ];

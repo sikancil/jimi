@@ -1,8 +1,8 @@
-var agents = require('./agents');
+var handlers = require('./handlers');
 
 exports.mappings = [
-    ['^$', agents.today],
-    ['^day/$', agents.day],
-    ['^month/$', agents.month],
-    ['^year/$', agents.year]
+    ['^$', handlers.today],
+    ['^day/$', handlers.day],
+    ['^month/$', handlers.month],
+    ['^year/$', handlers.year]
 ];

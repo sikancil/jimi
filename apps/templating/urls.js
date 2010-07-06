@@ -1,7 +1,7 @@
-var agents = require('./agents');
+var handlers = require('./handlers');
 
 exports.mappings = [
-    ['^$', agents.root],
+    ['^$', handlers.root],
     ['^delay/', require('./delay/urls').mappings],
-    ['^favicon\.ico$', agents.favicon]
+    ['^favicon\.ico$', handlers.favicon]
 ];
