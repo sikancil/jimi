@@ -25,7 +25,7 @@ exports.root = function (req, res) {
 }
 
 exports.redirect = function (req, res) {
-    res.redirect('/');
+    jimi.redirect(res, '/');
 }
 
 exports.favicon = function (req, res) {
